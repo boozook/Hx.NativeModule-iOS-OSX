@@ -1,0 +1,11 @@
+-cp src
+
+-D haxeJSON
+-D analyzer
+
+-dce std
+
+#-D debug
+#-D dump=pretty
+
+-D HXCPP_CPP11

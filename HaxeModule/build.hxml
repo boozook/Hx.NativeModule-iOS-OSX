@@ -1,0 +1,67 @@
+general.hxml
+
+-main fzzr.nativemodule.HaxeModule
+
+-D static_link
+
+-D debug
+
+--each
+
+
+#--next
+## For get the hx::Boot (iOS)
+#-D no-compilation
+#-D objc
+#-cpp out/cpp/lib/
+
+
+
+--next
+# iOS: ARM 6
+-D ios
+-D iphoneos
+-D HXCPP_ARMV6
+-cpp out/cpp/lib/
+
+--next
+# iOS: ARM 7
+-D ios
+-D iphoneos
+-D HXCPP_ARMV7
+-cpp out/cpp/lib/
+
+--next
+# iOS: ARM 7s
+-D ios
+-D iphoneos
+-D HXCPP_ARMV7S
+-cpp out/cpp/lib/
+
+--next
+# iOS: ARM 64
+-D ios
+-D iphoneos
+-D HXCPP_ARM64
+-cpp out/cpp/lib/
+
+--next
+# iOS-SIM: Mac 64
+-D iphonesim
+-D HXCPP_M64
+-cpp out/cpp/lib/
+
+--next
+# iOS-SIM: i386
+-D iphonesim
+-cpp out/cpp/lib/
+
+
+-cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos-64.a out/cpp/lib/haxem.iphoneos-64.a
+-cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos-v7.a out/cpp/lib/haxem.iphoneos-v7.a
+-cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos-v7s.a out/cpp/lib/haxem.iphoneos-v7s.a
+-cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos.a out/cpp/lib/haxem.iphoneos.a
+-cmd cp -rf out/cpp/lib/libHaxeModule.iphonesim-64.a out/cpp/lib/haxem.iphonesim-64.a
+-cmd cp -rf out/cpp/lib/libHaxeModule.iphonesim.a out/cpp/lib/haxem.iphonesim.a
+
+-cmd lipo -create -output out/cpp/lib/haxem.universal.a out/cpp/lib/haxem.iphoneos-64.a out/cpp/lib/haxem.iphoneos-v7.a out/cpp/lib/haxem.iphoneos-v7s.a out/cpp/lib/haxem.iphoneos.a out/cpp/lib/haxem.iphonesim-64.a out/cpp/lib/haxem.iphonesim.a

@@ -1,0 +1,9 @@
+general.hxml
+
+-main fzzr.nativemodule.HaxeModule
+
+-D debug
+-D dump=pretty
+
+
+-cpp out/cpp/test/
