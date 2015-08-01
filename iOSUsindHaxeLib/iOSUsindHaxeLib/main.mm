@@ -9,8 +9,22 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
-	@autoreleasepool {
+extern "C" const char *hxRunLibrary();
+extern "C" void hxcpp_set_top_of_stack();
+
+extern "C" int main(int argc, char *argv[])
+{
+	hxcpp_set_top_of_stack();
+	const char *error = NULL;
+	error = hxRunLibrary();
+	if(error)
+	{
+		printf("Hx:Error %s\n", error);
+		return -1;
+	}
+	
+	@autoreleasepool
+	{
 	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
 	}
 }
