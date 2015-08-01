@@ -583,7 +583,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"/Users/ak/Developer/Haxe/libs/hxcpp/3,2,102/include/**",
-					"/Users/ak/Developer/Projects/NativeModule-iOS-OSX/HaxeModule/out/cpp/lib/include/**",
+					"/Users/ak/Developer/Projects/NativeModule-iOS-OSX/HaxeModule/out/cpp/lib/sim-i386/include/**",
 				);
 				INFOPLIST_FILE = iOSUsindHaxeLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -604,7 +604,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"/Users/ak/Developer/Haxe/libs/hxcpp/3,2,102/include/**",
-					"/Users/ak/Developer/Projects/NativeModule-iOS-OSX/HaxeModule/out/cpp/lib/include/**",
+					"/Users/ak/Developer/Projects/NativeModule-iOS-OSX/HaxeModule/out/cpp/lib/sim-i386/include/**",
 				);
 				INFOPLIST_FILE = iOSUsindHaxeLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
