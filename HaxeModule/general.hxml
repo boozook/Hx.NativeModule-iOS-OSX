@@ -3,7 +3,7 @@
 -D haxeJSON
 -D analyzer
 
--dce std
+-dce no
 
 #-D debug
 #-D dump=pretty

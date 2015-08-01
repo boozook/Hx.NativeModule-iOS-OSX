@@ -73,7 +73,6 @@
 		411B34841B69076C000570A2 /* haxem.iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDEA1B68F62800DB1D76 /* haxem.iphoneos.a */; };
 		411B34851B69076C000570A2 /* haxem.iphonesim-64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDEB1B68F62800DB1D76 /* haxem.iphonesim-64.a */; };
 		411B34861B69076C000570A2 /* haxem.iphonesim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDEC1B68F62800DB1D76 /* haxem.iphonesim.a */; };
-		411B34871B69076C000570A2 /* haxem.universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDED1B68F62800DB1D76 /* haxem.universal.a */; };
 		41B3FDC21B68F24400DB1D76 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41B3FDC11B68F24400DB1D76 /* main.mm */; };
 		41B3FDC51B68F24400DB1D76 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41B3FDC41B68F24400DB1D76 /* AppDelegate.mm */; };
 		41B3FDC81B68F24400DB1D76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B3FDC71B68F24400DB1D76 /* ViewController.m */; };
@@ -87,7 +86,6 @@
 		41B3FDF81B68F62800DB1D76 /* haxem.iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDEA1B68F62800DB1D76 /* haxem.iphoneos.a */; };
 		41B3FDF91B68F62800DB1D76 /* haxem.iphonesim-64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDEB1B68F62800DB1D76 /* haxem.iphonesim-64.a */; };
 		41B3FDFA1B68F62800DB1D76 /* haxem.iphonesim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDEC1B68F62800DB1D76 /* haxem.iphonesim.a */; };
-		41B3FDFB1B68F62800DB1D76 /* haxem.universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3FDED1B68F62800DB1D76 /* haxem.universal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,7 +148,6 @@
 		41B3FDEA1B68F62800DB1D76 /* haxem.iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = haxem.iphoneos.a; path = ../HaxeModule/out/cpp/lib/haxem.iphoneos.a; sourceTree = "<group>"; };
 		41B3FDEB1B68F62800DB1D76 /* haxem.iphonesim-64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "haxem.iphonesim-64.a"; path = "../HaxeModule/out/cpp/lib/haxem.iphonesim-64.a"; sourceTree = "<group>"; };
 		41B3FDEC1B68F62800DB1D76 /* haxem.iphonesim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = haxem.iphonesim.a; path = ../HaxeModule/out/cpp/lib/haxem.iphonesim.a; sourceTree = "<group>"; };
-		41B3FDED1B68F62800DB1D76 /* haxem.universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = haxem.universal.a; path = ../HaxeModule/out/cpp/lib/haxem.universal.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +180,6 @@
 				411B345F1B690412000570A2 /* libzlib.iphoneos-v7s.a in Frameworks */,
 				411B344D1B690412000570A2 /* libregexp.iphoneos-v7s.a in Frameworks */,
 				411B345E1B690412000570A2 /* libzlib.iphoneos-v7.a in Frameworks */,
-				41B3FDFB1B68F62800DB1D76 /* haxem.universal.a in Frameworks */,
 				41B3FDF51B68F62800DB1D76 /* haxem.iphoneos-64.a in Frameworks */,
 				411B345D1B690412000570A2 /* libzlib.iphoneos-64.a in Frameworks */,
 				41B3FDF91B68F62800DB1D76 /* haxem.iphonesim-64.a in Frameworks */,
@@ -213,7 +209,6 @@
 				411B34791B690764000570A2 /* libstd.iphonesim-64.a in Frameworks */,
 				411B34861B69076C000570A2 /* haxem.iphonesim.a in Frameworks */,
 				411B347F1B690764000570A2 /* libzlib.iphonesim-64.a in Frameworks */,
-				411B34871B69076C000570A2 /* haxem.universal.a in Frameworks */,
 				411B346C1B690764000570A2 /* libregexp.iphoneos.a in Frameworks */,
 				411B34841B69076C000570A2 /* haxem.iphoneos.a in Frameworks */,
 				411B346B1B690764000570A2 /* libregexp.iphoneos-v7s.a in Frameworks */,
@@ -344,7 +339,6 @@
 				41B3FDEA1B68F62800DB1D76 /* haxem.iphoneos.a */,
 				41B3FDEB1B68F62800DB1D76 /* haxem.iphonesim-64.a */,
 				41B3FDEC1B68F62800DB1D76 /* haxem.iphonesim.a */,
-				41B3FDED1B68F62800DB1D76 /* haxem.universal.a */,
 			);
 			name = haxe;
 			sourceTree = "<group>";

@@ -46,14 +46,20 @@
 	//NSLog(@"test getString(): %f", ((NSString)fzzr::nativemodule::HaxeModule_obj::getString()));
 	
 	fzzr::nativemodule::HaxeModule_obj::main(); //OK
-	
 	fzzr::nativemodule::HaxeModule_obj::tryTrace(); //OK
-	
 	fzzr::nativemodule::TestRegexp_obj::test(); //OK
 	
-	fzzr::nativemodule::HaxeModule_obj* inst = new fzzr::nativemodule::HaxeModule_obj();// WHY?
+	
+	
 	new fzzr::nativemodule::HaxeModule();// WHY CONSTRUCTOR DON'T WORKS?
-	//inst::localMethod();
+	fzzr::nativemodule::HaxeModule_obj* inst = new fzzr::nativemodule::HaxeModule_obj();// WHY?
+	NSLog(@"HaxeModule.localField: %f", (inst->localField)); //Must be `100500.` but getting `0.000000` :(
+	
+	
+	double value = (double)(inst->localMethod(1));
+	NSLog(@"HaxeModule.localMethod(): %f", value); // Expected `100500`+- but getted `nan` :(
+	
+	
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

@@ -8,6 +8,7 @@ class HaxeModule
 {
 	//----------- properties, fields ------------//
 
+	public var localField:Float = 0;
 
 	//--------------- constructor ---------------//
 	public static function main()
@@ -24,7 +25,7 @@ class HaxeModule
 	{
 		trace("HaxeModule constructor()");
 		Sys.println("constructor");
-		localMethod();
+		localField = localMethod(0);
 	}
 
 
@@ -69,9 +70,9 @@ class HaxeModule
 		Sys.println("`print` works fine.");
 	}
 
-	public function localMethod():Float
+	public function localMethod(i:Int = 100):Float
 	{
-		var result = Math.random() * 100500;
+		var result = (Math.random() * i) + 100500;
 		trace('localMethod($result)');
 		return result;
 	}
