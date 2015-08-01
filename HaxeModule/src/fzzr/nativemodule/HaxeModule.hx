@@ -20,6 +20,17 @@ class HaxeModule
 		var ia = getIntArray();
 	}
 
+	public function new()
+	{
+		trace("HaxeModule constructor()");
+		Sys.println("constructor");
+		localMethod();
+	}
+
+
+	//--------------- initialize ----------------//
+
+	//---------------- control ------------------//
 
 	public static function getInt():Int
 	{
@@ -53,19 +64,17 @@ class HaxeModule
 
 	public static function tryTrace():Void
 	{
-		//trace("`trace` works fine.");
-		Sys.println("`trace` works fine.");
+		trace("`trace` works fine.");
+		trace('TestRegexp.test() -> ${TestRegexp.test()}');
+		Sys.println("`print` works fine.");
 	}
 
-	public function new()
+	public function localMethod():Float
 	{
-
+		var result = Math.random() * 100500;
+		trace('localMethod($result)');
+		return result;
 	}
-
-
-	//--------------- initialize ----------------//
-
-	//---------------- control ------------------//
 
 	//----------- handlers, callbacks -----------//
 

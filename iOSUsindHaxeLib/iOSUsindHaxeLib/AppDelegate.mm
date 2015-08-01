@@ -45,11 +45,15 @@
 	NSLog(@"test getBool(): %i", ((bool)fzzr::nativemodule::HaxeModule_obj::getBool())); //OK
 	//NSLog(@"test getString(): %f", ((NSString)fzzr::nativemodule::HaxeModule_obj::getString()));
 	
-	fzzr::nativemodule::HaxeModule_obj::main(); //FAIL
+	fzzr::nativemodule::HaxeModule_obj::main(); //OK
 	
-	fzzr::nativemodule::HaxeModule_obj::tryTrace(); //FAIL
+	fzzr::nativemodule::HaxeModule_obj::tryTrace(); //OK
 	
-	fzzr::nativemodule::TestRegexp_obj::test(); //FAIL
+	fzzr::nativemodule::TestRegexp_obj::test(); //OK
+	
+	fzzr::nativemodule::HaxeModule_obj* inst = new fzzr::nativemodule::HaxeModule_obj();// WHY?
+	new fzzr::nativemodule::HaxeModule();// WHY CONSTRUCTOR DON'T WORKS?
+	//inst::localMethod();
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

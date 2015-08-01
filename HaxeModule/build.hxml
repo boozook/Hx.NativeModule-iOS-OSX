@@ -4,7 +4,7 @@ general.hxml
 
 -D static_link
 
--D debug
+#-D debug
 
 --each
 
@@ -22,46 +22,46 @@ general.hxml
 -D ios
 -D iphoneos
 -D HXCPP_ARMV6
--cpp out/cpp/lib/
+-cpp out/cpp/lib/arm6/
 
 --next
 # iOS: ARM 7
 -D ios
 -D iphoneos
 -D HXCPP_ARMV7
--cpp out/cpp/lib/
+-cpp out/cpp/lib/arm7/
 
 --next
 # iOS: ARM 7s
 -D ios
 -D iphoneos
 -D HXCPP_ARMV7S
--cpp out/cpp/lib/
+-cpp out/cpp/lib/arm7s/
 
 --next
 # iOS: ARM 64
 -D ios
 -D iphoneos
 -D HXCPP_ARM64
--cpp out/cpp/lib/
+-cpp out/cpp/lib/arm64/
 
 --next
 # iOS-SIM: Mac 64
 -D iphonesim
 -D HXCPP_M64
--cpp out/cpp/lib/
+-cpp out/cpp/lib/sim-m64/
 
 --next
 # iOS-SIM: i386
 -D iphonesim
--cpp out/cpp/lib/
+-cpp out/cpp/lib/sim-i386/
 
 
--cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos-64.a out/cpp/lib/haxem.iphoneos-64.a
--cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos-v7.a out/cpp/lib/haxem.iphoneos-v7.a
--cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos-v7s.a out/cpp/lib/haxem.iphoneos-v7s.a
--cmd cp -rf out/cpp/lib/libHaxeModule.iphoneos.a out/cpp/lib/haxem.iphoneos.a
--cmd cp -rf out/cpp/lib/libHaxeModule.iphonesim-64.a out/cpp/lib/haxem.iphonesim-64.a
--cmd cp -rf out/cpp/lib/libHaxeModule.iphonesim.a out/cpp/lib/haxem.iphonesim.a
+-cmd cp -rf out/cpp/lib/arm64/libHaxeModule.iphoneos-64.a out/cpp/lib/haxem.iphoneos-64.a
+-cmd cp -rf out/cpp/lib/arm7/libHaxeModule.iphoneos-v7.a out/cpp/lib/haxem.iphoneos-v7.a
+-cmd cp -rf out/cpp/lib/arm7s/libHaxeModule.iphoneos-v7s.a out/cpp/lib/haxem.iphoneos-v7s.a
+-cmd cp -rf out/cpp/lib/arm6/libHaxeModule.iphoneos.a out/cpp/lib/haxem.iphoneos.a
+-cmd cp -rf out/cpp/lib/sim-m64/libHaxeModule.iphonesim-64.a out/cpp/lib/haxem.iphonesim-64.a
+-cmd cp -rf out/cpp/lib/sim-i386/libHaxeModule.iphonesim.a out/cpp/lib/haxem.iphonesim.a
 
 -cmd lipo -create -output out/cpp/lib/haxem.universal.a out/cpp/lib/haxem.iphoneos-64.a out/cpp/lib/haxem.iphoneos-v7.a out/cpp/lib/haxem.iphoneos-v7s.a out/cpp/lib/haxem.iphoneos.a out/cpp/lib/haxem.iphonesim-64.a out/cpp/lib/haxem.iphonesim.a
